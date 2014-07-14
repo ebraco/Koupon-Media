@@ -12,7 +12,7 @@
 		  <div class="six columns" style="display:inline-flex;">
 		  	<img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/KP_footer_logo.png" style="height: 100%;" /> <span style="vertical-align:top;padding:8px;"><a href="mailto:info@kouponmedia.com" style="font-size:16px;color:#fff">GET IN TOUCH</a> </span> 
 		  </div>
-		  <div class="four columns" style="display:inline-flex; margin-left:130px;">
+		  <div class="four columns" style="display:inline-flex; margin-left:85px;">
 		  	<img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/question_icon.png" style="height: 100%;" /><span style="vertical-align:top;padding:8px;"> <a href="tel:214.377.1280" style="font-size:16px;color:#fff;">(214) 377-1280</a>  </span>		  </div> 
           <div class="four columns" style="display:inline-flex;">
           <img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/email_icon.png" style="height:100%;" /><span style="vertical-align:top;padding:8px;"><a href="mailto:info@kouponmedia.com" style="font-size:16px;color:#39b94a;">info@kouponmedia.com</a></span>
