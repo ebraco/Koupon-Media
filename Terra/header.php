@@ -78,56 +78,7 @@
   
   	<!-- Container -->
 	<div class="container">
-	
-		<div id="hidden_header" class="row" <?php echo (!$use_header_popup = ot_get_option('use_header_popup')) ? "style='margin-bottom: 30px; display: block;'" : ""; ?>>
-			<div class="eight columns">
-				<div class="header_right">
-					<div class="header_contacts clearfix">
-					<?php if($header_email = ot_get_option('header_email')){?>
-						<div class="header_mail"><?php echo $header_email;?></div>
-					<?php }  ?>	
-					<?php if($header_phone = ot_get_option('header_phone')){?>
-						<div class="header_phone"><?php echo $header_phone;?></div>
-					<?php }  ?>
-					</div>
-				</div>
-			</div>
-			<div class="eight columns">
-				<div class="header_soc_search clearfix">
-					
-				<?php if($show_search = ot_get_option('show_search')){?>	
-					<div class="header_search">
-						<form class="search" action="<?php echo home_url(); ?>/" method="get">
-							<button class="button_search"></button>
-							<input name="s" id="s" type="text" placeholder="<?php echo ($s ? $s : __('Search', 'Terra').'...'); ?>" value="" />
-						</form>
-					</div>
-				<?php }  ?>
-					
-				<?php if(is_array($header_icons = ot_get_option('header_icons'))){
-							$header_icons = array_reverse($header_icons);							
-							foreach($header_icons as $header_icon){
-								echo "<a target='_blank' href='". ( $header_icon['icons_service']!='rss' ? $header_icon['icons_url'] : get_bloginfo('rss2_url') )."' class='header_soc_". $header_icon['icons_service'] ."' title='". $header_icon['title'] ."'>". $header_icon['icons_service'] ."</a>";			
-							}
-						}
-				?>
-				
-				</div>		
-			</div>
-		</div>	
-		
-	
-	<?php if($use_header_popup){?>
-		<div class="row">
-			<div class="sixteen columns header_toggler_holder">
-				<div id="header_toggler"></div>
-			</div>
-		</div>	
-	<?php }  ?>
-	
-	
-	
-	
+
 		<?php $nav_top_block_style = ot_get_option('nav_top_block_style');?>	
 				
 		<div class="header <?php echo ($nav_top_block_style ? 'block_header' : '');?> fluid columns">

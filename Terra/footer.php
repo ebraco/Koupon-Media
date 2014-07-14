@@ -12,8 +12,8 @@
 		  <div class="six columns" style="display:inline-flex;">
 		  	<img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/KP_footer_logo.png" style="height: 100%;" /> <span style="vertical-align:top;padding:8px;"><a href="mailto:info@kouponmedia.com" style="font-size:16px;color:#fff">GET IN TOUCH</a> </span> 
 		  </div>
-		  <div class="four columns" style="display:inline-flex; margin-left:115px;">
-		  	<img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/question_icon.png" style="height: 100%;" /><span style="vertical-align:top;padding:8px;"> <a href="tel:214.705.7533" style="font-size:16px;color:#fff;">(214) 705-7533</a>  </span>		  </div> 
+		  <div class="four columns" style="display:inline-flex; margin-left:130px;">
+		  	<img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/question_icon.png" style="height: 100%;" /><span style="vertical-align:top;padding:8px;"> <a href="tel:214.377.1280" style="font-size:16px;color:#fff;">(214) 377-1280</a>  </span>		  </div> 
           <div class="four columns" style="display:inline-flex;">
           <img src="http://kouponmedia.frycle.com/wp-content/uploads/2014/07/email_icon.png" style="height:100%;" /><span style="vertical-align:top;padding:8px;"><a href="mailto:info@kouponmedia.com" style="font-size:16px;color:#39b94a;">info@kouponmedia.com</a></span>
           </div>
@@ -32,7 +32,7 @@
 		?>
 	  	
 		  	<div id="powered"><?php echo ot_get_option('copyrights');?></div>
-              <div><span style="margin-left:65%; display:inline;"><a href="#">Privacy Policy</a>&nbsp; &nbsp; <a href="#">Terms of Use</a></span></div>
+              <div><span style="margin-left:67%; display:inline;"><a href="#">Privacy Policy</a>&nbsp; &nbsp; <a href="#">Terms of Use</a></span></div>
 		</div>	
 	  </div>
 	</div>

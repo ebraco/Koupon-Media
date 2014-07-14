@@ -952,12 +952,8 @@ function shortcode_clients_section($atts, $content = null) {
 		), $atts));
 			
 	$str='<div class="clients_section">	
-			<div class="five columns client_info_intro alpha">
-				<h1>'.$heading.'</h1>
-				<h2>'.$subheading.'</h2>
-				'.$text.'
-			</div>
-			<div class="ten columns client_info_holder animationStart omega">				
+			
+			<div class="sixteen columns client_info_holder">				
 				'.do_shortcode_boc($content).'
 			</div>
 		</div>';
@@ -976,7 +972,7 @@ function shortcode_logo($atts, $content = null) {
 		), $atts));
 				
 	
-	$str= ($img_url ? '<div class="three columns client_info">
+	$str= ($img_url ? '<div class="two columns client_info">
 			<a href="'.$href.'" target="_blank" class="tooltipsy" original-title="'.($text ? $text : '').'"><img src="'.$img_url.'"></a>
 		  </div>': '');
 	
