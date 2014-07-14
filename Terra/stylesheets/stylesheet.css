@@ -2939,7 +2939,7 @@ ul.checked li {
 .htabs {
 	height: 30px;
 	line-height: 15px;
-	padding: 5% 29%;
+	padding: 5% 33%;
     margin:auto;
 }
 .htabs a {
@@ -4236,6 +4236,7 @@ li.comment ol.comment_sub {
 
 /* #Footer
 ================================================== */
+#footer_link{margin-left:85px;}
 #footer {
 	width: 1020px;
 	clear: both;
@@ -4649,21 +4650,34 @@ li.comment ol.comment_sub {
 .home_Text{color:#fff; font-size:50px; padding-left:13%; padding-top:13%;}
 .home_subText{color:#fff; padding-left:13%; padding-top:1%;}
 .learnBTN{position:relative;  padding-left:13%; padding-top:3%;}
+.homeIcons {display:block; padding:9% 0 0 13%; width:58%;}
+.hIcon{ display:inline-block; width:27%; vertical-align:top;}
 .mobile_feature{position:relative; left:20%; width:80%;}
 .offerExt{width: 50%;}
 .offerInt{display:inline-block; width:40%;vertical-align:top;}
-.audience{width: 25%; padding: 5% 13%;}
+.audience{width:30%; padding: 5% 13%;}
 .offer_features{margin-left: 8%; padding-left: 5%;}
 .about_team{margin-top:50px;}
 .termLink{margin-left:64%; display:inline;}
 .locationInt{display: inline-block; width: 20%; vertical-align: top; }
+.locationInt2{margin-left:1%;display: inline-block; width: 20%; vertical-align: top; }
+.locationInt3 {margin-left:5%; display:inline-block; width:20%; vertical-align:top;}
 .footer_links{ margin-left:130px;}
+.audience_text{padding: 2% 33%; }
+.custTable{width:100%; border-top:1px solid #e3e6e6; border-bottom:1px solid #e3e6e6;}
+.ipad{text-align: center; padding-left:10%; margin-top:-50px;}
+
+
+
+
 
 /* CUSTOM RESPONSIVE STYLES */
-
+/* Large Screen */
 @media only screen 
 and (min-width : 1600px) {
     .home_banner {height:850px;}
+    .homeIcons {display:block; padding:9% 0 0 20%; width:50%;}
+.hIcon{ display:inline-block; width:30%; vertical-align:top;}
     #logo {margin: 1% 4% 0 15%;}
     #menu {padding:8px 0 0;}
     .audience{width: 25%; padding: 10% 19%;}
@@ -4672,14 +4686,16 @@ and (min-width : 1600px) {
 .home_Text{color:#fff; font-size:50px; padding-left:19%; padding-top:13%;}
 .home_subText{color:#fff; padding-left:19%; padding-top:1%;}
 .learnBTN{position:relative;  padding-left:18%; padding-top:3%;}
-        .htabs{padding:5% 36%;}
+        .htabs{padding:5% 37%;}
 
 }
 
 @media only screen and (max-width:770px) {
        #menu {margin-right:0px;}
        #menu > ul > li:nth-child(5) , #menu > ul > li:nth-child(6){left:0px} 
-       .htabs { padding:5% 29%; } 
+       .htabs { padding:5% 29%; }
+               #logo {margin:1% 0 0 6%;}
+
 }
 /* #Tablet (Landscape)
 ================================================= */
@@ -4687,20 +4703,35 @@ and (min-width : 1600px) {
 
 
 @media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
+and (min-width : 768px) 
+and (max-width : 1024px) 
 and (orientation : landscape) {
-        #logo {margin:1% 0 0 5%;}
-        .home_banner{background-size:contain !important;margin-top:100px; }
-        .home_Text{ font-size:35px; padding-left:4%; padding-top:30%;}
+        #logo {margin:1% 0 0 1%;}
+        .home_banner{background-size:contain !important; }
+        .home_Text{ font-size:35px; padding-left:4%; padding-top:10%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
-        .learnBTN{padding-left:12%; padding-top:3%; width:20%;}
-        .audience{width: 50%; padding: 5% 20%;}
+        .homeIcons{width:70%; padding:7% 0 0 8%;}
+        .hIcon{width:24%;}
+        .learnBTN{padding-left:4%; padding-top:3%; width:20%;}
+        .audience{width: 50%; padding: 15% 3%;}
         .about_team{display:none;}
         .about_mobile{background-image:url('/wp-content/uploads/2014/07/mobile_team.jpg') no-repeat;}
          .htabs{padding:5% 30%;}
          #menu{margin-top:-5px;}
+         #footer_link{margin-left:70px;}
+         .offer_features{margin-left:4%; padding-left:0px;}
+         .offerExt {width:42%; padding-left:0px;}
+         .offerInt {width: 80%;}
 
+
+}
+/* Small Tablet landscape */
+@media only screen and (min-width:600px) and (max-width:800px) {
+    #logo {margin: 1% 13% 0 5%;}
+    .htabs {padding:5% 24%}
+}
+@media only screen and (min-width:800px) and (max-width:600px) {
+    .htabs {padding: 5% 24%;}
 }
 
 /* #Tablet (Portrait)
@@ -4710,9 +4741,10 @@ and (orientation : landscape) {
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
         #logo{margin:1% 2% 0 5%}
-        .home_banner{background-size:contain !important;background-position-y:165px;}
-        .home_Text{ font-size:35px; padding-left:4%; padding-top:30%;}
+        .home_banner{background-size:contain !important;background-position-y:77px;}
+        .home_Text{ font-size:35px; padding-left:4%; padding-top:18%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
+         .homeIcons{width:75%;padding:9% 0 0 1%;}
         .learnBTN{padding-left:3%; padding-top:3%; width:20%;}
         .htabs{padding:5% 26%;}
         .audience{width:50%; padding:10% 13%;}
@@ -4726,7 +4758,7 @@ and (orientation : landscape) {
         					{ margin: 20px auto; width: 768px; }
         .footer_btm , #footer.footer_light .footer_btm		{ padding: 25px 0px 23px; }
         .footer_btm_inner, #wrapper.full_wrapper .footer_btm_inner	{ width: 748px; margin: 0px auto; }
-		
+	     #footer_link {margin-left:0px;}
 		#menu 				{ margin-right:0px; margin-top:-5px; position:relative; }
 		#menu > ul > li > a { padding: 0px 8px 0px 8px; }
 
@@ -4745,11 +4777,14 @@ and (orientation : landscape) {
 		.page_sidebar .twelve.columns { width: 546px; }
 		
 		.left_title { font-size: 14px;}
-
+        .offer_features{width:100%;}
+        .mobile_feature{display:none;}
 	    .rev_slider_wrapper .button, .rev_slider_wrapper a.button, .rev_slider_wrapper a.button:hover {
 			padding:3px 8px 3px; line-height:18px !important; font-size:11px !important;font-weight:normal;
 	    }    	
-    	
+        .location_targeting{margin-top:-3px;}
+    	.ipad{margin-top:-40px;}
+
     }
 
 
@@ -4764,11 +4799,14 @@ and (orientation : landscape) {
         .home_Text{ font-size:35px; padding-left:4%; padding-top:70%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
         .learnBTN{padding-left:4%; padding-top:3%; width:35%;}
+        .homeIcons{padding: 45% 0 0 9%;}
+        .hIcon{display:inline;}
+        .mobile-header{margin-top:185%;}
         #wrapper, #wrapper.full_wrapper
         		 			{ width: 100%; margin: 0px auto; border-radius: 0px; padding:0; border: none; }
-        #footer 			{ width: 100%; }
+        #footer 			{ width: 100%; overflow-x:hidden; }
         .footer_inside, #wrapper.full_wrapper .footer_inside 
-        			 		{ margin: 0px auto 10px; width: 300px; }
+        			 		{ margin: 15px auto 10px; width: 300px; padding-left:40px;}
         .footer_btm 		{ padding: 25px 0px 23px; }
         .footer_btm_inner, #wrapper.full_wrapper .footer_btm_inner
         					{ width: 300px; margin: 0px auto; }
@@ -4778,7 +4816,7 @@ and (orientation : landscape) {
     	
     	.header_right 		{ text-align: center;}
     	#menu 				{ display: none; }
-    	#select_menu		{ display: block; width: 100%; padding: 8px; margin: 20px 52px 0px; float: left;}
+    	#select_menu		{ display: block; width: 80%; padding: 8px; margin: 20px 72px 0px; float: left;}
     	
     	.header_contacts 	{ text-align: center; margin: 20px 0 30px; height: auto; }
     	.header_phone		{ float: none; display: inline; margin: 4px 0 5px 14px; padding-top: 1px; }
@@ -4803,9 +4841,10 @@ and (orientation : landscape) {
 		.page_heading h1		{ font-size: 20px;}
 		.section_big_title		{ margin: 10px 0 24px !important;}
 		
-		.htabs 			{	height: auto; border-bottom: 0; margin-right: 0px; padding:5% 30%;}
+		.htabs 			{ display:none;	height: auto; border-bottom: 0; margin-right: 0px; padding:5% 30%;}
 		.htabs a 		{	float: none; display: block; margin-right: 0px; border-right: 1px solid #E2E2E2; }
-		
+		.tab-content h1 {font-size:18px;}
+        .tab-content h3{font-size:14px;}
     	.portfolio_description	{ padding-left: 0; }
     	
     	.clients_section 		{ margin-left: 0; margin-right: 0;}
@@ -4840,17 +4879,29 @@ and (orientation : landscape) {
 		
 		.title, .left_title, .title span { font-size: 12px; }
 		
-		.tab-content img {float: none !important; display: block; margin: 0 auto  12px !important;}
-		.tab-content div {width: 100% !important; padding-left: 0 !important;}
-		
+		.tab-content img {display:none;/*float: none !important; display: block; margin: 0 auto  12px !important;*/}
+		.tab-content div, .tab-content {width: 100% !important; padding: 0 !important;}
+		  #footer_link{margin-left:0px;}
 		#footer.footer_light .footer_btm { padding: 25px 0px 23px;}
-        .mobil_feature{display:none;}
-        .offerExt{width:100%;}
+        .location_services,.featured_offers,.reporting_services{background-size:contain;}
+        .featured_offers{height:365px;}
+        .location_services{background:none;}
+        .location_targeting{margin-top:-30px;}
+        .audience{width:80%; padding:95% 4%;}
+        .audience_text{padding:0;}
+        .reporting_services{margin-top:440px;}
+        .mobile_feature{display:none;}
+        .offer_features{width:100%;}
+        .offerExt{width:80%;}
         .offerInt{width:100%;}
-        .featured_offers{background-size:auto !important;}
-		.termLink{margin-left:4%;}
+		.termLink{margin-left:18%;}
         .footer_links{ margin-left:0px}
-        .locationInt{width:100%; }
+        .locationInt{width:80%; }
+        .locationInt2{width:80%; margin-left:20%;}
+        .hide{display:none;}
+        .custTable{width:80%;}
+        .locationInt3{width:80%; margin-left:15%;}
+        .ipad{ margin-top:0px;}
 
     }
 
@@ -4861,11 +4912,16 @@ and (orientation : landscape) {
     /* Note: Design for a width of 480px */
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .hide{display:none;}
         #logo {margin:1% 0 0 5%;}
         .home_banner{height:590px;background-size:cover !important; background-position:0 155px; }
-        .home_Text{ font-size:35px; padding-left:4%; padding-top:70%;}
+        .home_Text{ font-size:35px; padding-left:4%; padding-top:35%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
         .learnBTN{padding-left:4%; padding-top:3%; width:35%;}
+        .homeIcons{padding: 45% 0 0 9%;}
+        .hIcon{display:inline;}
+        .mobile-header{margin-top:185%;}
+        #footer_link{margin-left:0px;}
         .footer_inside, #wrapper.full_wrapper .footer_inside
         					{ margin: 0px auto 20px; width: 420px; padding:0; }
         .footer_btm_inner, #wrapper.full_wrapper .footer_btm_inner
@@ -4874,17 +4930,22 @@ and (orientation : landscape) {
 		
 		/* Page Specific */	
         
-        .htabs{padding:5% 30%;}
+        .htabs,.tab-content img{display:none;}
 		.htabs a 			{ }
-    	    
+    	    .ipad{ margin-top:150px;}
+
 	    .rev_slider_wrapper .button, .rev_slider_wrapper a.button, .rev_slider_wrapper a.button:hover {
 			padding:2px 6px 2px; line-height:20px !important; font-size:11px !important;font-weight:normal;
 	    }
         .mobile_feature{display:none;}
+        .offer_features{width:80%;}
         .offerExt{width:100%;}
         .termLink{margin-left:4%;}
                 .footer_links{ margin-left:0px}
-        .locationInt{width:100%; }
+        .locationInt{width:80%; }
+        .locationInt2{width:80%; margin-left:20%;}
+        .locationInt3{width:80%; margin-left:15%;}
+        .custTable{width:80%;}
     }
 
 

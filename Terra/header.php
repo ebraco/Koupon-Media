@@ -81,7 +81,7 @@
 
 		<?php $nav_top_block_style = ot_get_option('nav_top_block_style');?>	
 				
-		<div class="header <?php echo ($nav_top_block_style ? 'block_header' : '');?> fluid columns">
+		<div style="margin-top:-17px;" class="header <?php echo ($nav_top_block_style ? 'block_header' : '');?> fluid columns">
 
 			<div id="logo">
 				<?php  $logo = ot_get_option('logo_upload');
