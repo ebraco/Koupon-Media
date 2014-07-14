@@ -522,13 +522,14 @@ blockquote.right {
 	position:relative;
 }
 #menu {
-	float: right;
-	margin-right: 30%;
+	/*float: right;*/
+	margin: -1px auto 0;
 	height: 40px;
-	padding: 8px 0 0;
+	padding: 4px 0 0;
 	font-family: 'Open Sans', arial, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
+    max-width:1024px;
 }
 #menu a{
 	/*font-size: 13px;*/
@@ -1395,7 +1396,7 @@ box-shadow: none;
 
 #logo{
 	float: left;
-	margin:1% 0 0 10%;
+	margin:1% 3% 0 10%;
 }
 #logo h1{
 	font-size: 30px;
@@ -2938,8 +2939,8 @@ ul.checked li {
 .htabs {
 	height: 30px;
 	line-height: 15px;
-	padding: 5% 34%;
-    margin-left:1%;
+	padding: 5% 29%;
+    margin:auto;
 }
 .htabs a {
 	color: #8a9ba1;
@@ -4654,26 +4655,32 @@ li.comment ol.comment_sub {
 .audience{width: 25%; padding: 5% 13%;}
 .offer_features{margin-left: 8%; padding-left: 5%;}
 .about_team{margin-top:50px;}
-.termLink{margin-left:67%; display:inline;}
+.termLink{margin-left:64%; display:inline;}
+.locationInt{display: inline-block; width: 20%; vertical-align: top; }
+.footer_links{ margin-left:130px;}
 
 /* CUSTOM RESPONSIVE STYLES */
 
 @media only screen 
 and (min-width : 1600px) {
     .home_banner {height:850px;}
-    #logo {margin: 1% 0 0 15%;}
-    #menu {margin-right:37%;}
+    #logo {margin: 1% 4% 0 15%;}
+    #menu {padding:8px 0 0;}
     .audience{width: 25%; padding: 10% 19%;}
     .location_services{height:820px;}
     .offer_features{margin-left:15%; padding-left: 5%;}
 .home_Text{color:#fff; font-size:50px; padding-left:19%; padding-top:13%;}
 .home_subText{color:#fff; padding-left:19%; padding-top:1%;}
 .learnBTN{position:relative;  padding-left:18%; padding-top:3%;}
+        .htabs{padding:5% 36%;}
+
 }
 
-
-
-
+@media only screen and (max-width:770px) {
+       #menu {margin-right:0px;}
+       #menu > ul > li:nth-child(5) , #menu > ul > li:nth-child(6){left:0px} 
+       .htabs { padding:5% 29%; } 
+}
 /* #Tablet (Landscape)
 ================================================= */
 
@@ -4691,7 +4698,9 @@ and (orientation : landscape) {
         .audience{width: 50%; padding: 5% 20%;}
         .about_team{display:none;}
         .about_mobile{background-image:url('/wp-content/uploads/2014/07/mobile_team.jpg') no-repeat;}
-        
+         .htabs{padding:5% 30%;}
+         #menu{margin-top:-5px;}
+
 }
 
 /* #Tablet (Portrait)
@@ -4700,7 +4709,7 @@ and (orientation : landscape) {
     /* Note: Design for a width of 768px */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-        #logo{margin:1% 0 0 5%}
+        #logo{margin:1% 2% 0 5%}
         .home_banner{background-size:contain !important;background-position-y:165px;}
         .home_Text{ font-size:35px; padding-left:4%; padding-top:30%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
@@ -4709,7 +4718,7 @@ and (orientation : landscape) {
         .audience{width:50%; padding:10% 13%;}
         .termLink{margin-left:59%; display:inline;}
         #wrapper, #wrapper.full_wrapper
-            				{ width: 100%; margin: 0px auto; border-radius: 0px; padding:0; border: none;}
+                			{ width: 100%; margin: 0px auto; border-radius: 0px; padding:0; border: none;}
        
         #footer 			{ width: 100%; }
         
@@ -4718,7 +4727,7 @@ and (orientation : landscape) {
         .footer_btm , #footer.footer_light .footer_btm		{ padding: 25px 0px 23px; }
         .footer_btm_inner, #wrapper.full_wrapper .footer_btm_inner	{ width: 748px; margin: 0px auto; }
 		
-		#menu 				{ margin-right: 190px; margin-top:-5px; position:relative; }
+		#menu 				{ margin-right:0px; margin-top:-5px; position:relative; }
 		#menu > ul > li > a { padding: 0px 8px 0px 8px; }
 
     	.column.client_info_holder, .columns.client_info_holder {margin-left: 24px; padding-left: 8px; }
@@ -4750,11 +4759,11 @@ and (orientation : landscape) {
     /* Note: Design for a width of 320px */
 
     @media only screen and (max-width: 767px) {
-        #logo{margin:1% 0 0 5%;}
-        .home_banner{background-size:contain; height:590px;background-position:0 165px;}
-        .home_Text{ font-size:35px; padding-left:4%; padding-top:30%;}
+        #logo{margin:1% 0 0 40%;}
+        .home_banner{background-size:cover; height:590px;background-position:0 165px;}
+        .home_Text{ font-size:35px; padding-left:4%; padding-top:70%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
-        .learnBTN{padding-left:12%; padding-top:3%; width:20%;}
+        .learnBTN{padding-left:4%; padding-top:3%; width:35%;}
         #wrapper, #wrapper.full_wrapper
         		 			{ width: 100%; margin: 0px auto; border-radius: 0px; padding:0; border: none; }
         #footer 			{ width: 100%; }
@@ -4839,7 +4848,10 @@ and (orientation : landscape) {
         .offerExt{width:100%;}
         .offerInt{width:100%;}
         .featured_offers{background-size:auto !important;}
-		
+		.termLink{margin-left:4%;}
+        .footer_links{ margin-left:0px}
+        .locationInt{width:100%; }
+
     }
 
 
@@ -4850,10 +4862,10 @@ and (orientation : landscape) {
 
     @media only screen and (min-width: 480px) and (max-width: 767px) {
         #logo {margin:1% 0 0 5%;}
-        .home_banner{height:590px;background-size:contain !important; background-position:0 155px; }
-        .home_Text{ font-size:35px; padding-left:4%; padding-top:30%;}
+        .home_banner{height:590px;background-size:cover !important; background-position:0 155px; }
+        .home_Text{ font-size:35px; padding-left:4%; padding-top:70%;}
         .home_subText{font-size:16px; padding-left:4%; padding-top:0%;}
-        .learnBTN{padding-left:12%; padding-top:3%; width:20%;}
+        .learnBTN{padding-left:4%; padding-top:3%; width:35%;}
         .footer_inside, #wrapper.full_wrapper .footer_inside
         					{ margin: 0px auto 20px; width: 420px; padding:0; }
         .footer_btm_inner, #wrapper.full_wrapper .footer_btm_inner
@@ -4870,6 +4882,12 @@ and (orientation : landscape) {
 	    }
         .mobile_feature{display:none;}
         .offerExt{width:100%;}
+        .termLink{margin-left:4%;}
+                .footer_links{ margin-left:0px}
+        .locationInt{width:100%; }
     }
+
+
+
 
 
